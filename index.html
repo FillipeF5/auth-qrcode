@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Auth</title>
+</head>
+
+<body>
+    <header>
+        <img src="_img/logo.svg"></img>
+        <h3> Teleconsulta </h3>
+    </header>
+
+    <main>
+        <div class="info">
+            <h4>Verificação de Autenticidade de Atestados e Declarações</h4>
+            <ul>
+                <li>
+                    Categoria: <span>Atestado</span>
+                </li>
+                <li>
+                    Paciente: <span>Fillipe Freitas Monteiro</span>
+                </li>
+                <li>
+                    Médico: <span>Fulano da Silva</span>
+                </li>
+                <li>
+                    Data da Consulta: <span> 12/11/2022 </span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="conteudo">
+            <h5>Conteúdo do Documento</h5>
+            <p>
+                Atesto que paciente supracitado realiza acompanhamento médico, via
+                teleconsulta, com psicólogo. Apresentando sinais de estresse rotineiro, dores de cabeça,
+                e consequentemente perda frequente do sono. Tal
+                situação tem repercutido com uma baixa, mas crescente piora do estado de
+                saude mental e emocional
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p id="date"></p>
+    </footer>
+
+    <script>
+        const current = new Date();
+        const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
+        document.getElementById("date").innerHTML = date;
+    </script>
+
+</body>
+
+</html>
